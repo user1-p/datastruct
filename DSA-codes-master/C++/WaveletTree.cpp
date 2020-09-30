@@ -91,10 +91,7 @@ struct wavelet_tree{
 		if(k <= mid) return this->l->count(lb+1, rb, k);
 		return this->r->count(l-lb, r-rb, k);
 	}
-	~wavelet_tree(){
-		delete l;
-		delete r;
-	}
+	..
 };
 int main()
 {
